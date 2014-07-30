@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Socket.IO chat</title>
+  </head>
+  <body>
+    <button id="test">test</button>
+	<div id="teub"></div>
+	<script src="jquery.1.11.1.js"></script>
+	<script src="socket.io.js"></script>
+	<script>
+		$(document).ready(function() {
+			var clicko = 0;
+			var socket = io('http://37.187.9.21:1337');
+			$("#test").click(function() {
+				clicko = parseInt(clicko) + 1;
+				$("#teub").text('clicked ' + clicko + ' times');
+				socket.emit('message', 'y');
+			});
+			socket.on('updc', function (data) {
+				clicko = data;
+				$("#teub").text('clicked ' + clicko + ' times');
+			});
+		});
+	</script>
+  </body>
+</html>
