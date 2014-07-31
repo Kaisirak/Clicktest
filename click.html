@@ -2,26 +2,40 @@
 <html>
   <head>
     <title>Socket.IO chat</title>
+	<link href="special.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <button id="test">test</button>
-	<div id="teub"></div>
+	<div id="cont">
+		<div id="test"></div>
+		<div id="teub"></div>
+	</div>
 	<script src="jquery.1.11.1.js"></script>
 	<script src="socket.io.js"></script>
 	<script>
 		$(document).ready(function() {
 			var clicko = 0;
 			var socket = io('http://37.187.9.21:1337');
-			$("#test").click(function() {
+			$("#test").mousedown(function() {
+				$(this).css('background-position', 'bottom');
+				chgClr();
 				clicko = parseInt(clicko) + 1;
 				$("#teub").text('clicked ' + clicko + ' times');
 				socket.emit('message', 'y');
 			});
+			$("#test").mouseup(function() {
+				$(this).css('background-position', 'top');
+			});
 			socket.on('updc', function (data) {
 				clicko = data;
+				chgClr();
 				$("#teub").text('clicked ' + clicko + ' times');
 			});
 		});
+		
+		function chgClr()
+		{
+			;
+		}
 	</script>
   </body>
 </html>

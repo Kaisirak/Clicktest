@@ -1,0 +1,26 @@
+#test {
+	background-image: url('papabtn.png');
+	width: 512px;
+	height: 300px;
+	border: none;
+	background-color: #fff;
+	background-position: top;
+	cursor: pointer;
+	margin: auto;
+}
+
+#teub {
+	margin-top: 30px;
+	color: #FFF;
+	text-align: center;
+	font-size: 32px;
+	font-weight: bold;
+	text-shadow: 0px 0px 4px #3E5D9E, 0px 0px 6px #37B6F1;
+	font-family: terminal, sans-serif;
+}
+
+#cont {
+width:100%;
+padding: 20px;
+margin-top: 25vh;
+}
