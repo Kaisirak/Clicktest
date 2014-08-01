@@ -6,14 +6,15 @@
 	<meta property="og:url" content="http://www.whydontyouclick.me/" />
 	<meta property="og:description" content="Seriously, why don't you click me?" />
 	<meta property="og:type" content="website" />
-	<meta property="og:locale" content="en_US" /> 
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:image" content="http://whydontyouclick.me/preview.jpg" />	
     <title>OH GOD, CLICK ME</title>
 	<link href="special.css" rel="stylesheet" type="text/css">
   </head>
   <body>
 	<div id="cont">
 		<div id="test"></div>
-		<div id="teub"></div>
+		<div id="teub"><span id="txtclick"><span></div>
 	</div>
 	<div id="socia">
 		<ul>
@@ -30,25 +31,36 @@
 			var socket = io('http://37.187.9.21:1337');
 			$("#test").mousedown(function() {
 				$(this).css('background-position', 'bottom');
-				chgClr();
 				clicko = parseInt(clicko) + 1;
-				$("#teub").text('clicked ' + clicko + ' times');
+				$("#txtclick").text('clicked ' + clicko + ' times');
+				if (clicko % 10 == 0)
+				{
+					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
+					$(".cpy").animate({
+									opacity: 0,
+									top: "-=200" }, 1000, "linear", function() {
+										$(this).remove();
+									});
+				}
 				socket.emit('message', 'y');
 			});
 			$("#test").mouseup(function() {
 				$(this).css('background-position', 'top');
 			});
 			socket.on('updc', function (data) {
-				clicko = data;
-				chgClr();
-				$("#teub").text('clicked ' + clicko + ' times');
+				clicko = parseInt(data);
+				$("#txtclick").text('clicked ' + clicko + ' times');
+				if (clicko % 10 == 0)
+				{
+					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
+					$(".cpy").animate({
+									opacity: 0.05,
+									top: "-=200" }, 2000, function() {
+										$(this).remove();
+									});
+				}
 			});
 		});
-		
-		function chgClr()
-		{
-			;
-		}
 	</script>
   </body>
 </html>

@@ -21,9 +21,9 @@
 }
 
 #socia {
-	margin-top: 20vh;
-	margin-left: auto;
-	margin-right: auto;
+	position: absolute;
+	left: calc(50% - 205px);
+	top: 84vh;
 	width: 400px;
 }
 
@@ -35,6 +35,13 @@ li {
 	margin-right: 40px;
 	margin-left: 40px;
 	display: inline-block;
+}
+
+.cpy {
+	top: -32px;
+	display: block;
+	position: relative;
+
 }
 
 .opa {
