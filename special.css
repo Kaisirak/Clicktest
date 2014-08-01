@@ -11,12 +11,12 @@
 
 #chst {
 	background-image: url('chestbig.png');
-	width: 290px;
-	height: 96px;
+	width: 46px;
+	height: 48px;
 	cursor: not-allowed;
-	margin: auto;
 	background-repeat: no-repeat;
-	margin-bottom: 20px;
+	margin-bottom: 4vh;
+	margin-left: calc(50% - 108px);
 }
 
 #chsttxt {
@@ -32,7 +32,7 @@
 
 #teub {
 	min-height: 32px;
-	margin-top: 50px;
+	margin-top: 5vh;
 	color: #FFF;
 	text-align: center;
 	font-size: 32px;
