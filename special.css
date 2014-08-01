@@ -10,6 +10,7 @@
 }
 
 #teub {
+	min-height: 32px;
 	margin-top: 30px;
 	color: #FFF;
 	text-align: center;
@@ -17,6 +18,46 @@
 	font-weight: bold;
 	text-shadow: 0px 0px 4px #3E5D9E, 0px 0px 6px #37B6F1;
 	font-family: terminal, sans-serif;
+}
+
+#socia {
+	margin-top: 20vh;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+}
+
+ul {
+	padding: 0px;
+}
+
+.opa {
+	display: inline-block;
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	margin-right: 40px;
+	margin-left: 40px;
+	opacity: 0.2;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.opa:hover {
+	opacity: 0.9;
+}
+
+#soc1 {
+	background-image: url('icon1.png');
+}
+
+#soc2 {
+	background-image: url('icon2.png');
+}
+
+#soc3 {
+	background-image: url('icon3.png');
 }
 
 #cont {
