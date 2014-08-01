@@ -27,13 +27,14 @@
 	<script src="socket.io.js"></script>
 	<script>
 		$(document).ready(function() {
+			var lvlup = 100;
 			var clicko = 0;
 			var socket = io('http://37.187.9.21:1337');
 			$("#test").mousedown(function() {
 				$(this).css('background-position', 'bottom');
 				clicko = parseInt(clicko) + 1;
 				$("#txtclick").text('clicked ' + clicko + ' times');
-				if (clicko % 10 == 0)
+				if (clicko % lvlup == 0)
 				{
 					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
 					$(".cpy").animate({
@@ -50,7 +51,7 @@
 			socket.on('updc', function (data) {
 				clicko = parseInt(data);
 				$("#txtclick").text('clicked ' + clicko + ' times');
-				if (clicko % 10 == 0)
+				if (clicko % lvlup == 0)
 				{
 					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
 					$(".cpy").animate({
