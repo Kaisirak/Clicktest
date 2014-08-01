@@ -29,7 +29,10 @@
 	<script>
 		$(document).ready(function() {
 		
-		$(document).dblclick(function (e) {
+		$("#teub").dblclick(function (e) {
+			e.preventDefault();
+		});
+		$("#test").dblclick(function (e) {
 			e.preventDefault();
 		});
 			var lvlup = 100;
