@@ -41,6 +41,12 @@
 	left: 64px;
 }
 
+div, span {
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
 #teub {
 	min-height: 32px;
 	margin-top: 5vh;
@@ -51,9 +57,6 @@
 	font-weight: bold;
 	text-shadow: 0px 0px 5px #6C8FD8, 0px 0px 8px #1FB8FF;
 	font-family: custom, sans-serif;
-	-webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 #socia {
