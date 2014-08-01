@@ -15,7 +15,7 @@
 	height: 48px;
 	cursor: not-allowed;
 	background-repeat: no-repeat;
-	margin-bottom: 4vh;
+	margin-bottom: 8vh;
 	margin-left: calc(50% - 108px);
 }
 
@@ -100,5 +100,5 @@ li {
 
 #cont {
 	width:100%;
-	margin-top: 15vh;
+	margin-top: 12vh;
 }
