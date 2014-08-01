@@ -46,6 +46,11 @@
 	margin-top: 5vh;
 	color: #FFF;
 	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0px 0px 5px #6C8FD8, 0px 0px 8px #1FB8FF;
+	font-family: custom, sans-serif;
 }
 
 #socia {
@@ -103,13 +108,6 @@ li {
 	background-color: #E8F7FF;
 	border-radius: 5px;
 	padding: 3px;
-	color: #FFF;
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 20px;
-	font-weight: bold;
-	text-shadow: 0px 0px 5px #6C8FD8, 0px 0px 8px #1FB8FF;
-	font-family: custom, sans-serif;
 }
 
 #cont {
