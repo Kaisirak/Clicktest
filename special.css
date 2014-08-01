@@ -13,8 +13,6 @@
 	min-height: 32px;
 	margin-top: 50px;
 	color: #FFF;
-	background-color: #E8F7FF;
-	border-radius: 5px;
 	text-align: center;
 	font-size: 32px;
 	font-weight: bold;
@@ -73,7 +71,12 @@ li {
 	background-image: url('icon3.png');
 }
 
+#txtclick {
+	background-color: #E8F7FF;
+	border-radius: 5px;
+}
+
 #cont {
-width:100%;
-margin-top: 18vh;
+	width:100%;
+	margin-top: 18vh;
 }
