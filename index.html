@@ -39,7 +39,7 @@
 			});
 			socket.on('updc', function (data) {
 				clicko = parseInt(data);
-				$("#txtclick").text('clicked ' + clicko + ' times');
+				$("#txtclick").text('- clicked ' + clicko + ' times -');
 				if (clicko % lvlup == 0)
 				{
 					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
