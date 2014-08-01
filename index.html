@@ -54,8 +54,8 @@
 				{
 					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
 					$(".cpy").animate({
-									opacity: 0.05,
-									top: "-=200" }, 2000, function() {
+									opacity: 0,
+									top: "-=200" }, 1000, "linear", function() {
 										$(this).remove();
 									});
 				}
