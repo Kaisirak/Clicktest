@@ -11,18 +11,23 @@
 
 #chst {
 	background-image: url('chestbig.png');
-	width: 92px;
+	width: 290px;
 	height: 96px;
 	cursor: not-allowed;
 	margin: auto;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
 }
 
 #chsttxt {
-	display: inline-block;
 	font-size: 24px;
+	color: #FFF;
 	font-weight: bold;
 	text-shadow: 0px 0px 4px #3E5D9E, 0px 0px 6px #37B6F1;
 	font-family: terminal, sans-serif;
+	position: relative;
+	top: 32px;
+	left: 120px;
 }
 
 #teub {
@@ -94,5 +99,5 @@ li {
 
 #cont {
 	width:100%;
-	margin-top: 18vh;
+	margin-top: 15vh;
 }
