@@ -27,7 +27,7 @@ $(document).ready(function() {
 			});
 			socket.on('scrt', function(data) {
 				$("#chst").css("cursor", "help");
-				$("#chst").css("backgroundImage", "chestopen.png");
+				$("#chst").css("backgroundImage", "url('chestopen.png')");
 				$("#chsttxt").text("1,000,000 HOLY SHIT");
 				$("#chst").attr("href", data);
 			});
