@@ -27,36 +27,7 @@
 	</div>
 	<script src="jquery.1.11.1.js"></script>
 	<script src="socket.io.js"></script>
-	<script>
-		$(document).ready(function() {
-			var lvlup = 100;
-			var clicko = 0;
-			var socket = io('http://37.187.9.21:1337');
-			$("#test").mousedown(function() {
-				$(this).css('background-position', 'bottom');
-				socket.emit('message', 'y');
-			});
-			$("#test").mouseup(function() {
-				$(this).css('background-position', 'top');
-			});
-			socket.on('updc', function (data) {
-				clicko = parseInt(data);
-				$("#txtclick").html('&nbsp;- clicked ' + clicko + ' times -&nbsp;');
-				if (clicko % lvlup == 0)
-				{
-					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
-					$(".cpy").animate({
-									opacity: 0,
-									top: "-=200" }, 1000, "linear", function() {
-										$(this).remove();
-									});
-				}
-			});
-			socket.on('spm', function() {
-				$("#chsttxt").text("!!! DON'T SPAM ME BRO !!!");
-			});
-		});
-	</script>
+	<script src="custom.js"></script>
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
