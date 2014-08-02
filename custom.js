@@ -25,4 +25,10 @@ $(document).ready(function() {
 			socket.on('spm', function() {
 				$("#chsttxt").text("!!! DON'T SPAM ME BRO !!!");
 			});
+			socket.on('scrt', function(data) {
+				$("#chst").css("cursor", "help");
+				$("#chst").css("backgroundImage", "chestopen.png");
+				$("#chsttxt").text("1,000,000 HOLY SHIT");
+				$("#chst").attr("href", data);
+			});
 		});
