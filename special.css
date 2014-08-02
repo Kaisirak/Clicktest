@@ -25,7 +25,6 @@
 	height: 48px;
 	cursor: not-allowed;
 	background-repeat: no-repeat;
-	margin-bottom: 8vh;
 	margin-left: calc(50% - 65px);
 	display: inline-block;
 }
@@ -39,7 +38,7 @@
 	font-family: customsm, sans-serif;
 	cursor: help;
 	position: relative;
-	top: -70px;
+	top: -16px;
 	left: 16px;
 }
 
