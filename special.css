@@ -19,6 +19,17 @@
 	margin: auto;
 }
 
+
+#chstlel{
+	background-image: url('chestlel.png');
+	width: 48px;
+	height: 48px;
+	cursor: not-allowed;
+	background-repeat: no-repeat;
+	margin-left: calc(50% - 65px);
+	display: inline-block;
+}
+
 #chst {
 	background-image: url('chestbig.png');
 	width: 48px;
@@ -30,6 +41,19 @@
 }
 
 #chsttxt {
+	font-size: 24px;
+	display: inline-block;
+	color: #FFF;
+	font-weight: bold;
+	text-shadow: 0px 0px 2px #5377C2, 0px 0px 6px #37B6F1;
+	font-family: customsm, sans-serif;
+	cursor: default;
+	position: relative;
+	top: -16px;
+	left: 16px;
+}
+
+#chsttxtlel {
 	font-size: 24px;
 	display: inline-block;
 	color: #FFF;
