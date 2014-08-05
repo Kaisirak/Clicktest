@@ -11,7 +11,7 @@ $(document).ready(function() {
 			});
 			socket.on('updc', function (data) {
 				clicko = parseInt(data);
-				$("#txtclick").html("&nbsp;- STOP CLICKING, IT'S OVER, - clicked " + clicko + " times - THANK YOU -&nbsp;");
+				$("#txtclick").html("&nbsp;- STOP CLICKING, IT'S OVER, - clicked " + clicko + " times - THANK YOU FOR PARTICIPATING -&nbsp;");
 				if (clicko % lvlup == 0)
 				{
 					$("#teub").append("<span class='cpy'>" + $("#txtclick").text() + "</span>");
