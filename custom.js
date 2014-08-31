@@ -1,7 +1,7 @@
 $(document).ready(function() {
 			var lvlup = 100;
 			var clicko = 0;
-			var socket = io('http://37.187.9.21:1337');
+			var socket = io('http://192.99.15.9:1337');
 			$("#test").mousedown(function() {
 				$(this).css('background-position', 'bottom');
 				socket.emit('message', 'y');
